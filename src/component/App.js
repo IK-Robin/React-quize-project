@@ -1,12 +1,12 @@
-import Good from './Git';
+import Home from '../pages/Home';
+import '../style/global.css';
+import Layout from './Layout';
 
 const App = function () {
     return (
-        <div>
-            <h2>jjj</h2>
-            <h1>hhhh</h1>
-            <Good />
-        </div>
+        <Layout>
+            <Home />
+        </Layout>
     );
 };
 
