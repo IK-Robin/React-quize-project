@@ -4,12 +4,16 @@
     "airbnb/hooks",
     "eslint:recommended",
     "prettier",
-    "plugin:jsx-a11y/recommended"
+    "plugin:jsx-a11y/recommended",
+    "plugin:prettier/recommended"
   ],
 
   "parserOptions": {
-    "ecmaVersion": 8
+    "ecmaVersion": 11
   },
+  // "parserOptions": {
+  //   "ecmaVersion": 8
+  // },
   "env": {
     "browser": true,
     "node": true,
@@ -17,6 +21,7 @@
     "jest": true
   },
   "rules": {
+    "react/jsx-props-no-spreading": 0,
     "import/no-named-as-default": 0,
     "import/no-named-as-default-member": 0,
     "react/function-component-definition": 0,
@@ -43,7 +48,8 @@
         "printWidth": 100,
         "tabWidth": 4,
         "semi": true,
-        "endOfLine": "auto"
+        "endOfLine": "auto",
+        "parser": "flow"
       }
     ]
   },

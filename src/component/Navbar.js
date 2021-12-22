@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from '../images/logo-bg.png';
 import classess from '../style/Nav.module.css';
 import Account from './Account';
@@ -7,10 +8,10 @@ export default function Navbar() {
         <nav className={classess.nav}>
             <ul>
                 <li>
-                    <a href="index.html" className={classess.brand}>
+                    <Link to="/Home" className={classess.brand}>
                         <img src={logo} alt="Learn with Sumit Logo" />
                         <h3>Learn with Sumit</h3>
-                    </a>
+                    </Link>
                 </li>
             </ul>
             <Account />

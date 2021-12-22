@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import classess from '../style/Account.module.css';
 
 export default function Account() {
@@ -6,7 +7,7 @@ export default function Account() {
             <span className="material-icons-outlined" title="Account">
                 account_circle
             </span>
-            <a href="signup.html">Signup</a>
+            <Link to="/Signup">Signup</Link>
             {/* <!-- <spa?n class="material-icons-outlined" title="Logout"> logout </spa?n> --> */}
         </div>
     );
